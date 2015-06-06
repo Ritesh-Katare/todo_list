@@ -8,7 +8,7 @@ simply management of todolist
   - each item can be edited, the name of the item can be edited
   - item can be added or deleted
 
-- Used AngularJS, Bootstrap(gem bootstrap-sass)
+- Used AngularJS, Bootstrap(gem bootstrap-sass), Angular-xeditable to create editable elements(http://vitalets.github.io/angular-xeditable/)
 
 Download Project to your machine, after unzip follow below instructions 
  1. Application using MySQL, install MySQL community server (https://dev.mysql.com/downloads/mysql/) .
