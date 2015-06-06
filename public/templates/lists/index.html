@@ -1,0 +1,20 @@
+<br/>
+<div class="row">
+    <div class="col-md-12">
+        <form id="new_list" ng-submit="save()">
+            <div class="input-group">
+                <input autofocus="autofocus" class="form-control input-lg" data-non-blank="" id="taskDescription" maxlength="255" ng-model="list.name" placeholder="List name" type="text" />
+                <span class="input-group-btn"><button class="btn btn-primary btn-lg" type="submit "ng-click="submitted=true">add list</button></span>
+            </div>
+        </form>
+        <h3 class="block">Lists</h3>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="list in lists">
+                <button class="btn btn-danger btn-xs pull-right" ng-click="deleteList(list.id)" type="button">
+                    <span class="glyphicon glyphicon-ban-circle"></span>
+                </button>
+                <a href="#/lists/{{list.id}}">{{list.name}}</a>
+            </li>
+        </ul>
+    </div>
+    </div>
